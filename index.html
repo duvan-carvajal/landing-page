@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
   <head>
@@ -36,14 +35,18 @@
         <div id="nav-links">
           <a href="#beneficios">Beneficios</a>
           <a href="#como-funciona">Cómo funciona</a>
-          <a href="#testimonios">Opiniones</a>
+          <a href="#testimonios">Sobre el proyecto</a>
           <a href="#faq">Preguntas frecuentes</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#registro">Contacto</a>
         </div>
 
         <div>
-          <a href="#registro" data-cta="header_login">Iniciar sesión</a>
-          <a href="#registro" data-cta="header_signup">Comenzar</a>
+          <!--
+            Iniciar sesión: agregar este enlace solo cuando exista la ruta real
+            de la plataforma (no apuntar al formulario de esta página).
+            <a href="URL_DE_INICIO_DE_SESION" data-cta="header_login">Iniciar sesión</a>
+          -->
+          <a href="#registro" data-cta="header_signup">Recibir información</a>
         </div>
       </nav>
     </header>
@@ -59,7 +62,7 @@
           Descubre conceptos, practica tus habilidades y avanza paso a paso
           con KodiCode.
         </p>
-        <a href="#registro" data-cta="hero_primary">Empieza a aprender</a>
+        <a href="#beneficios" data-cta="hero_primary">Explorar beneficios</a>
         <a href="#como-funciona" data-cta="hero_secondary">Conoce cómo funciona</a>
 
         <div id="hero-visual" aria-label="Ilustración de KodiCode">
@@ -97,9 +100,9 @@
 
       <!-- 4. CTA PRINCIPAL -->
       <section id="cta-principal" aria-labelledby="cta-title">
-        <h2 id="cta-title">Tu próximo paso empieza hoy</h2>
-        <p>Explora el mundo de la programación con KodiCode.</p>
-        <a href="#registro" data-cta="benefits_cta">Quiero comenzar</a>
+        <h2 id="cta-title">¿Quieres ver cómo funciona?</h2>
+        <p>Te mostramos los tres pasos para empezar con KodiCode.</p>
+        <a href="#como-funciona" data-cta="benefits_cta">Ver cómo funciona</a>
       </section>
 
       <!-- 5. EXPLICACIÓN -->
@@ -141,7 +144,7 @@
       <section id="cta-secundario" aria-labelledby="cta2-title">
         <h2 id="cta2-title">¿Listo para descubrir lo que puedes crear?</h2>
         <p>Da el primer paso con KodiCode.</p>
-        <a href="#registro" data-cta="secondary_cta">Explorar KodiCode</a>
+        <a href="#registro" data-cta="secondary_cta">Recibir información</a>
       </section>
 
       <!-- 8. FAQ -->
@@ -159,8 +162,8 @@
         <details>
           <summary>¿Cómo puedo comenzar?</summary>
           <p>
-            Puedes registrarte en el formulario de esta página y seguir las
-            instrucciones para acceder a la plataforma.
+            Por ahora puedes dejar tus datos en el formulario de esta página
+            para recibir información sobre la plataforma.
           </p>
         </details>
 
@@ -204,7 +207,10 @@
               type="checkbox"
               required
             />
-            Acepto el tratamiento de mis datos según la política de privacidad.
+            <span>
+              Acepto el tratamiento de mis datos según la
+              <a href="#privacidad" data-legal="privacidad">política de privacidad</a>.
+            </span>
           </label>
 
           <button type="submit">Quiero recibir información</button>
@@ -216,7 +222,7 @@
       <section id="contacto" aria-labelledby="contact-title">
         <h2 id="contact-title">Construye tu siguiente gran idea</h2>
         <p>Empieza a explorar el mundo de la programación.</p>
-        <a href="#registro" data-cta="prefooter_cta">Conocer KodiCode</a>
+        <a href="#inicio" data-cta="prefooter_cta">Volver al inicio</a>
       </section>
     </main>
 
@@ -226,12 +232,161 @@
       <p>Una nueva forma de acercarte a la programación.</p>
 
       <nav aria-label="Enlaces legales">
-        <a href="/privacidad">Política de privacidad</a>
-        <a href="/cookies">Política de cookies</a>
+        <a href="#privacidad" data-legal="privacidad">Política de privacidad</a>
+        <a href="#cookies" data-legal="cookies">Política de cookies</a>
       </nav>
 
       <p>© <span id="current-year"></span> KodiCode.</p>
     </footer>
 
+    <!--
+      POLÍTICAS LEGALES (ventanas modales)
+      Los textos entre [corchetes] resaltados en amarillo son datos que debes
+      completar. Antes de publicar con el formulario activo, revisa estos
+      textos con alguien que sepa de protección de datos, y ajusta la lista de
+      herramientas a las que realmente estén conectadas en ese momento.
+    -->
+
+    <dialog id="dialog-privacidad" class="legal" aria-labelledby="privacidad-title">
+      <div class="legal-head">
+        <h2 id="privacidad-title">Política de privacidad</h2>
+        <button type="button" class="legal-close" data-legal-close aria-label="Cerrar">×</button>
+      </div>
+
+      <div class="legal-body">
+        <p class="legal-updated">
+          Última actualización: <mark>[FECHA]</mark>
+        </p>
+
+        <h3>1. Quién es responsable de tus datos</h3>
+        <p>
+          El responsable del tratamiento de tus datos es
+          <mark>[NOMBRE O RAZÓN SOCIAL]</mark>, que desarrolla KodiCode. Puedes
+          escribirnos a <mark>[CORREO DE CONTACTO]</mark> para cualquier
+          consulta sobre esta política.
+        </p>
+
+        <h3>2. Qué datos recogemos</h3>
+        <ul>
+          <li>
+            <strong>Los que nos das tú:</strong> tu nombre y tu correo
+            electrónico cuando llenas el formulario de esta página.
+          </li>
+          <li>
+            <strong>Los que se generan al navegar:</strong> páginas que visitas,
+            clics en botones y preguntas frecuentes que abres, tipo de
+            dispositivo y navegador. Se recogen con herramientas de analítica
+            (ver la
+            <a href="#cookies" data-legal="cookies">política de cookies</a>).
+          </li>
+        </ul>
+
+        <h3>3. Para qué los usamos</h3>
+        <ul>
+          <li>Enviarte información sobre KodiCode y avisarte del lanzamiento de la plataforma.</li>
+          <li>Entender cómo se usa esta página para mejorarla.</li>
+        </ul>
+
+        <h3>4. Por qué podemos usarlos</h3>
+        <p>
+          Usamos tu nombre y correo porque nos das tu consentimiento al marcar
+          la casilla del formulario. Puedes retirarlo cuando quieras. Los datos
+          de navegación se tratan según lo que elijas sobre las cookies.
+        </p>
+
+        <h3>5. Con quién los compartimos</h3>
+        <p>
+          Solo con los proveedores que necesitamos para operar esta página:
+        </p>
+        <ul>
+          <li><strong>HubSpot:</strong> gestión de contactos y envío de información.</li>
+          <li><strong>Google (Tag Manager y Analytics):</strong> medición del uso de la página.</li>
+          <li><strong>Contentsquare:</strong> análisis de cómo se navega la página.</li>
+        </ul>
+        <p>
+          Algunos de estos proveedores pueden almacenar datos en servidores
+          fuera de tu país. No vendemos tus datos.
+        </p>
+
+        <h3>6. Cuánto tiempo los conservamos</h3>
+        <p>
+          Guardamos tus datos de contacto hasta que pidas eliminarlos o durante
+          un máximo de <mark>[PLAZO, por ejemplo 24 meses]</mark> sin que
+          interactúes con nosotros.
+        </p>
+
+        <h3>7. Tus derechos</h3>
+        <p>
+          Puedes pedirnos conocer, actualizar, corregir o eliminar tus datos, y
+          retirar tu consentimiento en cualquier momento. Escríbenos a
+          <mark>[CORREO DE CONTACTO]</mark> y te responderemos en un plazo
+          razonable. También puedes darte de baja desde cualquier correo que te
+          enviemos.
+        </p>
+
+        <h3>8. Cambios en esta política</h3>
+        <p>
+          Si cambiamos algo importante, actualizaremos la fecha de arriba y,
+          cuando corresponda, te lo avisaremos.
+        </p>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-cookies" class="legal" aria-labelledby="cookies-title">
+      <div class="legal-head">
+        <h2 id="cookies-title">Política de cookies</h2>
+        <button type="button" class="legal-close" data-legal-close aria-label="Cerrar">×</button>
+      </div>
+
+      <div class="legal-body">
+        <p class="legal-updated">
+          Última actualización: <mark>[FECHA]</mark>
+        </p>
+
+        <h3>1. Qué son las cookies</h3>
+        <p>
+          Son pequeños archivos que una página guarda en tu navegador para
+          recordar información o medir cómo se usa. Otras tecnologías similares
+          funcionan igual y las tratamos aquí como cookies.
+        </p>
+
+        <h3>2. Qué cookies usamos</h3>
+        <ul>
+          <li>
+            <strong>Necesarias:</strong> hacen que la página funcione, por
+            ejemplo recordar tu elección sobre las cookies. No se pueden
+            desactivar.
+          </li>
+          <li>
+            <strong>De analítica:</strong> Google Tag Manager, Google Analytics
+            y Contentsquare. Nos dicen qué secciones se visitan, en qué botones
+            se hace clic y dónde se atascan las personas, para mejorar la
+            página.
+          </li>
+          <li>
+            <strong>De contacto:</strong> HubSpot puede usar una cookie para
+            asociar tu visita con el formulario que envías.
+          </li>
+        </ul>
+        <p>
+          Las cookies de analítica y de contacto solo deberían activarse si
+          las aceptas. <mark>[Confirmar cuando se configure el aviso de cookies]</mark>
+        </p>
+
+        <h3>3. Cómo controlarlas</h3>
+        <p>
+          Puedes borrar o bloquear las cookies desde la configuración de tu
+          navegador. Si las bloqueas, algunas partes de la página podrían no
+          funcionar como esperas.
+        </p>
+
+        <h3>4. Más información</h3>
+        <p>
+          Para saber cómo tratamos tus datos personales, consulta la
+          <a href="#privacidad" data-legal="privacidad">política de privacidad</a>.
+          Si tienes dudas, escríbenos a <mark>[CORREO DE CONTACTO]</mark>.
+        </p>
+      </div>
+    </dialog>
   </body>
 </html>

@@ -1,0 +1,237 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aprende programación paso a paso con KodiCode. Descubre una forma práctica y divertida de desarrollar tus habilidades."
+    />
+    <meta name="theme-color" content="#f8fafc" />
+    <title>KodiCode | Aprende programación a tu ritmo</title>
+
+    <!-- Google Tag Manager: instalar aquí cuando tengamos el ID real -->
+
+    <script type="module" src="/src/main.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav aria-label="Navegación principal">
+        <a href="#inicio" aria-label="KodiCode, ir al inicio">
+          <span>KodiCode</span>
+        </a>
+
+        <button
+          id="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Abrir menú"
+        >
+          Menú
+        </button>
+
+        <div id="nav-links">
+          <a href="#beneficios">Beneficios</a>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#testimonios">Opiniones</a>
+          <a href="#faq">Preguntas frecuentes</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <div>
+          <a href="#registro" data-cta="header_login">Iniciar sesión</a>
+          <a href="#registro" data-cta="header_signup">Comenzar</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 1. HEADER: está arriba, fuera del main -->
+
+      <!-- 2. HERO -->
+      <section id="inicio" aria-labelledby="hero-title">
+        <p>Tu aventura en la programación comienza aquí</p>
+        <h1 id="hero-title">Aprender a programar puede ser más fácil de lo que imaginas.</h1>
+        <p>
+          Descubre conceptos, practica tus habilidades y avanza paso a paso
+          con KodiCode.
+        </p>
+        <a href="#registro" data-cta="hero_primary">Empieza a aprender</a>
+        <a href="#como-funciona" data-cta="hero_secondary">Conoce cómo funciona</a>
+
+        <div id="hero-visual" aria-label="Ilustración de KodiCode">
+          <!-- Claude podrá personalizar esta zona con ilustraciones y tarjetas -->
+          <img
+            src="/images/codey.png"
+            alt="Codey, la mascota de KodiCode"
+            hidden
+          />
+        </div>
+      </section>
+
+      <!-- 3. BENEFICIOS -->
+      <section id="beneficios" aria-labelledby="benefits-title">
+        <h2 id="benefits-title">Aprende a tu manera</h2>
+        <p>Una experiencia diseñada para acompañarte mientras aprendes.</p>
+
+        <div class="benefits-grid">
+          <article>
+            <h3>Aprende paso a paso</h3>
+            <p>Avanza desde los conceptos básicos hacia nuevos retos.</p>
+          </article>
+
+          <article>
+            <h3>Practica lo aprendido</h3>
+            <p>Refuerza tus conocimientos mediante actividades prácticas.</p>
+          </article>
+
+          <article>
+            <h3>Observa tu progreso</h3>
+            <p>Identifica lo que has aprendido y descubre qué puedes mejorar.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. CTA PRINCIPAL -->
+      <section id="cta-principal" aria-labelledby="cta-title">
+        <h2 id="cta-title">Tu próximo paso empieza hoy</h2>
+        <p>Explora el mundo de la programación con KodiCode.</p>
+        <a href="#registro" data-cta="benefits_cta">Quiero comenzar</a>
+      </section>
+
+      <!-- 5. EXPLICACIÓN -->
+      <section id="como-funciona" aria-labelledby="how-title">
+        <h2 id="how-title">¿Cómo funciona KodiCode?</h2>
+
+        <div class="steps-grid">
+          <article>
+            <span aria-hidden="true">01</span>
+            <h3>Crea tu cuenta</h3>
+            <p>Regístrate para comenzar tu experiencia.</p>
+          </article>
+
+          <article>
+            <span aria-hidden="true">02</span>
+            <h3>Explora el contenido</h3>
+            <p>Descubre los temas y actividades disponibles.</p>
+          </article>
+
+          <article>
+            <span aria-hidden="true">03</span>
+            <h3>Ponlo en práctica</h3>
+            <p>Refuerza lo aprendido y sigue avanzando.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 6. TESTIMONIOS -->
+      <section id="testimonios" aria-labelledby="testimonials-title">
+        <h2 id="testimonials-title">Una experiencia para aprender mejor</h2>
+        <p>
+          Estamos construyendo KodiCode para hacer el aprendizaje de la
+          programación más accesible.
+        </p>
+        <!-- Añadir testimonios auténticos cuando estén disponibles -->
+      </section>
+
+      <!-- 7. SEGUNDO CTA -->
+      <section id="cta-secundario" aria-labelledby="cta2-title">
+        <h2 id="cta2-title">¿Listo para descubrir lo que puedes crear?</h2>
+        <p>Da el primer paso con KodiCode.</p>
+        <a href="#registro" data-cta="secondary_cta">Explorar KodiCode</a>
+      </section>
+
+      <!-- 8. FAQ -->
+      <section id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Preguntas frecuentes</h2>
+
+        <details>
+          <summary>¿Necesito saber programar para empezar?</summary>
+          <p>
+            KodiCode está pensado para acompañar el aprendizaje progresivo.
+            Consulta el contenido disponible para conocer los requisitos.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Cómo puedo comenzar?</summary>
+          <p>
+            Puedes registrarte en el formulario de esta página y seguir las
+            instrucciones para acceder a la plataforma.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Qué puedo aprender?</summary>
+          <p>
+            Los temas dependerán de los cursos y actividades disponibles
+            dentro de KodiCode.
+          </p>
+        </details>
+      </section>
+
+      <!-- FORMULARIO DE CONVERSIÓN -->
+      <section id="registro" aria-labelledby="signup-title">
+        <h2 id="signup-title">Conoce KodiCode</h2>
+        <p>Déjanos tus datos para recibir información sobre la plataforma.</p>
+
+        <form id="lead-form">
+          <label for="lead-name">Nombre</label>
+          <input
+            id="lead-name"
+            name="firstname"
+            type="text"
+            autocomplete="given-name"
+            required
+          />
+
+          <label for="lead-email">Correo electrónico</label>
+          <input
+            id="lead-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+
+          <label>
+            <input
+              id="lead-consent"
+              name="consent"
+              type="checkbox"
+              required
+            />
+            Acepto el tratamiento de mis datos según la política de privacidad.
+          </label>
+
+          <button type="submit">Quiero recibir información</button>
+          <p id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <!-- 9. PRE-FOOTER -->
+      <section id="contacto" aria-labelledby="contact-title">
+        <h2 id="contact-title">Construye tu siguiente gran idea</h2>
+        <p>Empieza a explorar el mundo de la programación.</p>
+        <a href="#registro" data-cta="prefooter_cta">Conocer KodiCode</a>
+      </section>
+    </main>
+
+    <!-- 10. FOOTER -->
+    <footer id="footer">
+      <a href="#inicio">KodiCode</a>
+      <p>Una nueva forma de acercarte a la programación.</p>
+
+      <nav aria-label="Enlaces legales">
+        <a href="/privacidad">Política de privacidad</a>
+        <a href="/cookies">Política de cookies</a>
+      </nav>
+
+      <p>© <span id="current-year"></span> KodiCode.</p>
+    </footer>
+
+  </body>
+</html>

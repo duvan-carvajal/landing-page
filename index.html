@@ -37,7 +37,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header id="header">
       <nav aria-label="Navegación principal">
         <a href="#inicio" aria-label="KodiCode, ir al inicio">
-          <span>KodiCode</span>
+          <!-- Archivo en public/images/kodicode-logo-header.svg -->
+          <img src="/images/kodicode-logo.svg" alt="" width="823" height="228" />
         </a>
 
         <button
@@ -83,12 +84,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#beneficios" data-cta="hero_primary">Explorar beneficios</a>
         <a href="#como-funciona" data-cta="hero_secondary">Conoce cómo funciona</a>
 
-        <div id="hero-visual" aria-label="Ilustración de KodiCode">
-          <!-- Claude podrá personalizar esta zona con ilustraciones y tarjetas -->
+        <div id="hero-visual">
+          <!-- Archivo en public/images/kodicode-mascot.svg -->
           <img
-            src="/images/codey.png"
-            alt="Codey, la mascota de KodiCode"
-            hidden
+            src="/images/kodicode-mascot.svg"
+            alt="Mascota de KodiCode: un robot verde que saluda"
+            width="244"
+            height="240"
+            decoding="async"
+            fetchpriority="high"
           />
         </div>
       </section>

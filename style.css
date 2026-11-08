@@ -176,6 +176,8 @@ main > section > p {
   right: max(1rem, env(safe-area-inset-right, 0px));
   bottom: max(1rem, env(safe-area-inset-bottom, 0px));
   z-index: 40;
+  display: inline-block;
+  text-decoration: none;
   padding: 0.85rem 1.3rem;
   font: 700 0.95rem/1 var(--font-body);
   color: var(--ink);

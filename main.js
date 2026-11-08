@@ -117,7 +117,8 @@ document.querySelectorAll('dialog.legal').forEach((dialog) => {
 // Botón flotante de inscripción
 const floatingSignup = document.querySelector('#clickme');
 if (floatingSignup) {
-  floatingSignup.addEventListener('click', () => {
+  floatingSignup.addEventListener('click', (event) => {
+    event.preventDefault();
     document.querySelector('#registro')?.scrollIntoView({ behavior: 'smooth' });
   });
 }
